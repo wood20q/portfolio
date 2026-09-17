@@ -99,37 +99,21 @@ header {
   align-self: center;
 }
 
-.carousel-wrapper {
-  display: flex;
-  max-width: min(80%, 1000px);
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  margin: 0 auto;
-  overflow: hidden;
-  background-color: var(--blue);
+.projects-container {
+  background-color: var(--surface0);
+  padding: 1em;
 }
 
-.carousel-container {
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  
-  /* Horizontal Scroll Snap */
-  scroll-snap-type: x mandatory;
-  /* scrollbar-width: none; */
+.project {
+  padding: 1em;
+  display: grid;
+  justify-items: center;
+  background-color: var(--surface2);
 }
 
-/* .carousel-container::-webkit-scrollbar {
-  display: none;
-} */
-
-.projectSlide {
-  flex: 0 0 100%;
-  scroll-snap-align: center;
+.project img {
+  width: min(700px, 80%);
+  height: auto;
 }
 
 footer {
